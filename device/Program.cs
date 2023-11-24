@@ -57,7 +57,8 @@ async Task OnDesiredPropertyChanged(TwinCollection desiredProperties, object use
 while (true)
 {
     await SendMessage();
-    Thread.Sleep(5000);
+    //Thread.Sleep(5000);
+    await Task.Delay(5000);
 }
 
 
